@@ -45,7 +45,7 @@ Sub-Payload 0 | Sub-Payload 1 | Sub-Payload 2 | ... | Sub-Payload N-1
 ### Structure Of Sub-Payloads
 
 Sub-payload can be divided into three parts; Header, Length and Data.
-| Name | Header | Length | Data 
+ Name | Header | Length | Data 
 |--|--|--|--|
 Size | 1 Byte | 1 Byte | N Byte(s)
 Description | Predefined Identifier | Size of data in byte(s) | Described below
