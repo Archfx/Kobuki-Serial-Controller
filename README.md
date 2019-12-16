@@ -1,9 +1,6 @@
 # Kobuki-Serial-Controller
 Serial raw python implementation for controlling Kobuki Robot base
 
-
-
-
 # Overview
 
 The  [kobuki driver](http://yujinrobot.github.io/kobuki/classkobuki_1_1Kobuki.html)  communicates with the robot by using predefined protocol. In general, the driver sends the commands to the robot and the robot sends some feedback data or sensor readings. These commands and feedback data are converted into bytestreams for communication via serial interface. The protocol specifies that rules and forms of bytestreams.
@@ -48,7 +45,7 @@ Sub-Payload 0 | Sub-Payload 1 | Sub-Payload 2 | ... | Sub-Payload N-1
 ### Structure Of Sub-Payloads
 
 Sub-payload can be divided into three parts; Header, Length and Data.
-| Name | Header | Length | Data | 
+| Name | Header | Length | Data 
 |--|--|--|--|
 Size | 1 Byte | 1 Byte | N Byte(s)
 Description | Predefined Identifier | Size of data in byte(s) | Described below
@@ -58,3 +55,4 @@ Description | Predefined Identifier | Size of data in byte(s) | Described below
 ## Checksum
 
 Checksum is XOR'ed value of entire bytestream except headers. Checksum process ensure the integrity of bytestreams.
+
